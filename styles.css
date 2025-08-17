@@ -19,18 +19,16 @@ h1{
 
 .choice-display{
     width: 60%;
-    /* padding: 20px;
-    margin: 40px 0px; */
     display: flex;
     justify-content: space-between;
 }
 
-.user, .computer{
+.user-display, .computer-display{
     text-align: center;
     margin: auto;
 }
 
-.user>h3, .computer>h3{
+.user-display>h3, .computer-display>h3{
    padding: 20px; 
 }
 
@@ -46,7 +44,7 @@ h1{
     height: 150px;
 }
 
-.player-score{
+.human{
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -60,7 +58,7 @@ h1{
     align-items: center;
 }
 
-.computer-score{
+.computer{
     flex: 1;
     display: flex;
     flex-direction: column;

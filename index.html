@@ -11,39 +11,39 @@
     <h1>Welcome to Rock Paper and Scissors</h1>
 
     <div class="choice-display">
-        <div class="user">
+        <div class="user-display">
             <h3>YOU</h3>
             <img src="scissor.png" alt="scissors" height="200px" width="auto">
         </div>
-        <div class="computer">
+        <div class="computer-display">
             <h3>COMPUTER</h3>
             <img src="paper.png" alt="paper" height="200px" width="auto">
         </div>
     </div>
 
     <div class="choice-buttons">
-        <button>ROCK</button>
-        <button>PAPER</button>
-        <button>SCISSOR</button>
+        <button class='choices' id="rockBtn">ROCK</button>
+        <button class='choices' id="paperBtn">PAPER</button>
+        <button class='choices' id="scissorBtn">SCISSOR</button>
     </div>
 
     <div class="game-info">
 
-        <div class="player-score">
+        <div class="human">
             <h3>YOU</h3>
-            <p>0</p>
+            <p class="human-score">0</p>
         </div>
 
         <div class="round-info">
-            <h3>ROUND 1:</h3>
-            <p>BEST OF LUCK!</p>
-            <button>NEXT ROUND</button>
-            <button>PLAY AGAIN</button>   
+            <div>ROUND <span class="round">1</span></div>
+            <p class="result">BEST OF LUCK!</p>
+            <button id="nxtrnd">NEXT ROUND</button>
+            <button id="pagn">PLAY AGAIN</button>   
         </div>
 
-        <div class="computer-score">
+        <div class="computer">
             <h3>COMPUTER</h3>
-            <p>0</p>
+            <p class="computer-score">0</p>
         </div>
 
     </div>
