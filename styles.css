@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1{
+    text-align: center;
+    padding: 14px;
+}
+
+.choice-display{
+    width: 60%;
+    /* padding: 20px;
+    margin: 40px 0px; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.user, .computer{
+    text-align: center;
+    margin: auto;
+}
+
+.user>h3, .computer>h3{
+   padding: 20px; 
+}
+
+.choice-buttons{
+    display: flex;
+    gap: 50px;
+}
+
+.game-info{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+}
+
+.player-score{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.round-info{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.computer-score{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

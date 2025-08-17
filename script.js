@@ -36,27 +36,27 @@ YOUR SCORE: ${humanScore}  COMPUTER SCORE: ${computerScore}`);
     
 }
 
-function playGame(playRound){
+// function playGame(playRound){
 
-    for(let i = 0; i < 5; i++){
-        console.log(`ROUND ${i+1}: `);
-        let humanSelection = getHumanChoice();
-        let computerSelection = getComputerChoice();
-        playRound(humanSelection, computerSelection);
-    }
+//     for(let i = 0; i < 5; i++){
+//         console.log(`ROUND ${i+1}: `);
+//         let humanSelection = getHumanChoice();
+//         let computerSelection = getComputerChoice();
+//         playRound(humanSelection, computerSelection);
+//     }
     
-    if (humanScore > computerScore){
-        console.log('CONGRATULATIONS! YOU WON THE GAME!!!');
-        console.log(`YOU BEAT THE COMPUTER BY ${humanScore - computerScore} POINTS!`);
-    } else if (humanScore == computerScore){
-        console.log('WELL PLAYED! IT IS A DRAW');
-    } else{
-        console.log('YOU LOST! BETTER LUCK NEXT TIME');
-        console.log(`COMPUTER BEAT YOU BY ${computerScore - humanScore} POINTS!`);
-    }
-}
+//     if (humanScore > computerScore){
+//         console.log('CONGRATULATIONS! YOU WON THE GAME!!!');
+//         console.log(`YOU BEAT THE COMPUTER BY ${humanScore - computerScore} POINTS!`);
+//     } else if (humanScore == computerScore){
+//         console.log('WELL PLAYED! IT IS A DRAW');
+//     } else{
+//         console.log('YOU LOST! BETTER LUCK NEXT TIME');
+//         console.log(`COMPUTER BEAT YOU BY ${computerScore - humanScore} POINTS!`);
+//     }
+// }
 
 let humanScore = 0;
 let computerScore = 0;
 
-playGame(playRound);
+// playGame(playRound);
