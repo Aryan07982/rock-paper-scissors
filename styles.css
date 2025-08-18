@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* border: solid black 3px; */
 }
 
 body{
@@ -10,11 +11,15 @@ body{
     min-height: 100vh;
     align-items: center;
     justify-content: space-between;
+    font-family: 'Inter', sans-serif; 
 }
 
 h1{
     text-align: center;
     padding: 14px;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 700;
 }
 
 .choice-display{
@@ -29,7 +34,9 @@ h1{
 }
 
 .user-display>h3, .computer-display>h3{
-   padding: 20px; 
+   padding: 15px; 
+   margin-bottom: 10px;
+   font-size: 30px;
 }
 
 .choice-buttons{
@@ -37,30 +44,61 @@ h1{
     gap: 50px;
 }
 
-.game-info{
-    width: 40%;
-    display: flex;
-    justify-content: space-between;
-    height: 150px;
+.choices{
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
 }
 
-.human{
+.game-info{
+    width: 70%;
+    display: flex;
+    height: 180px;
+}
+
+.human, .computer{
     flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
+    text-align: center;
+}
+
+.human>h3, .computer>h3{
+    font-size: 25px;
+}
+
+.human-score, .computer-score{
+    margin-top: 15px;
+    font-size: 50px;
 }
 
 .round-info{
     flex: 3;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.computer{
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.round-info>h3{
+    font-size: 30px;
+    margin-bottom: 6px;
+}
+
+.result{
+    font-size: 20px;
+}
+
+.rndBtn{
+    width: 30%;
+    font-size: 15px;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+#nxtrnd{
+    margin-top: 15px;
+    margin-bottom: 10px;
 }

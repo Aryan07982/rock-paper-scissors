@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rocks Papers Scissors</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
@@ -13,11 +14,11 @@
     <div class="choice-display">
         <div class="user-display">
             <h3>YOU</h3>
-            <img src="scissor.png" alt="scissors" height="200px" width="auto">
+            <img src="default.png" alt="scissors" class= 'user-hand' height="200px" width="auto">
         </div>
         <div class="computer-display">
             <h3>COMPUTER</h3>
-            <img src="paper.png" alt="paper" height="200px" width="auto">
+            <img src="default.png" alt="paper" class= 'computer-hand' height="200px" width="auto">
         </div>
     </div>
 
@@ -35,10 +36,10 @@
         </div>
 
         <div class="round-info">
-            <div>ROUND <span class="round">1</span></div>
-            <p class="result">BEST OF LUCK!</p>
-            <button id="nxtrnd">NEXT ROUND</button>
-            <button id="pagn">PLAY AGAIN</button>   
+                <h3>ROUND <span class="round">1</span></h3>
+                <p class="result">BEST OF LUCK!</p>
+                <button class='rndBtn' id="nxtrnd">NEXT ROUND</button>
+                <button class='rndBtn' id="pagn">PLAY AGAIN</button>  
         </div>
 
         <div class="computer">

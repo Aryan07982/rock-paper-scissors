@@ -10,6 +10,8 @@ const disComputerScore = document.querySelector('.computer-score');
 const round = document.querySelector('.round');
 const nxtRoundBtn = document.querySelector('#nxtrnd');
 const playAgainBtn = document.querySelector('#pagn');
+const userHand = document.querySelector('.user-hand');
+const computerHand = document.querySelector('.computer-hand');
 
 nxtRoundBtn.disabled = true;
 playAgainBtn.disabled = true;
@@ -20,6 +22,17 @@ function getComputerChoice(){
 }
 
 function playRound(humanChoice, computerChoice){
+    switch (computerChoice){
+        case 'rock':
+            computerHand.src = 'rock.png';
+            break;
+        case 'paper':
+            computerHand.src = 'paper.png';
+            break;
+        case 'scissors':
+            computerHand.src = 'scissor.png';
+            break;
+    }
     if (humanChoice === computerChoice)
         {
             result.textContent = `DRAW! YOU BOTH CHOSE ${humanChoice}!`;
@@ -62,12 +75,15 @@ choiceButtons.addEventListener('click', (e)=>{
     switch (target.id){
         case 'rockBtn':
             humanChoice = 'rock';
+            userHand.src = 'rock.png';
             break;
         case 'paperBtn':
             humanChoice = 'paper';
+            userHand.src = 'paper.png';
             break;
         case 'scissorBtn':
             humanChoice = 'scissors'
+            userHand.src = 'scissor.png';
             break;
     }
     let computerChoice = getComputerChoice();
